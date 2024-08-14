@@ -1,53 +1,73 @@
-Sistema de Usuários
-Este projeto é uma aplicação Java baseada no framework Spring Boot, que fornece endpoint para o gerenciamento de  usuários. Utiliza banco de dados H2 para armazenamento, Lombok para redução de boilerplate.
+# Sistema de Usuários
+Este projeto é uma aplicação Java baseada no framework Spring Boot, que fornece endpoint para o gerenciamento de usuários. Utiliza banco de dados H2 para armazenamento, Lombok para redução de boilerplate.
 
-Estrutura do Projeto
-O projeto possui um controlador (controllers):
 
-User Controller
-Responsável por operações relacionadas ao usuário.
+## Documentação da API
 
-Endpoints:
+#### Retornar todos os usuários
 
-POST /users
-Cria um novo usuário.
-Parâmetros: Objeto UserCreateRequest no corpo da requisição.
-Resposta: Retorna um objeto UserCreateRequest indicando que o usuário foi criado com sucesso.
+```http
+  GET /users
+```
 
-GET /users/{id}
-Obtém informações de um usuário pelo ID.
-Parâmetros: ID do usuário na URL.
-Resposta: Retorna informações do usuário.
 
-GET /users
-Listar usuários
-Resposta: Retorna uma lista de usuários.
+#### Retornar um usuário
 
-DELETE /users/{id}
-Exclui um usuário pelo ID.
-Parâmetros: ID do usuário na URL.
-Resposta: Retorna uma resposta vazia com status 204.
+```http
+  GET /users/{id}
+```
 
-PUT /users
-Atualiza informações de um usuário.
-Parâmetros: Objeto UserUpdateRequest no corpo da requisição.
-Resposta: Retorna um objeto DetailsUserRequest com as informações atualizadas do usuário.
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `id`      | `string` | **Obrigatório**. O ID do usuário que você quer consultar|
 
-Tecnologias Utilizadas
-Java
-Spring Boot
-H2 Database
-Lombok
+#### Criar um usuário 
 
-Instruções de Instalação
-Clone o repositório.
-Execute a aplicação usando sua IDE ou ferramenta de build preferida.
-Configurações Adicionais
-Certifique-se de ter o Java instalado.
-Configure corretamente as dependências no arquivo de configuração.
+```http
+  POST /users
+```
 
-Contribuição
-Sinta-se à vontade para contribuir.
+| Parâmetro   | Retorno | Observação                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `Objeto UserCreateRequest no corpo da requisição`   | Retorna um objeto UserCreateRequest indicando que o usuário foi criado com sucesso |**Verificar os campos Obrigatório**. |
 
-Contato
-Para dúvidas ou mais informações, entre em contato pelo email devmarianapaulina@gmail.com
+#### Atualizar um usuário
+
+```http
+  PUT /users
+```
+
+| Parâmetro   | Retorno | Observação                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `Objeto UserUpdateRequest no corpo da requisição`   | Retorna um objeto DetailsUserRequest com as informações atualizadas do usuário |**Verificar os campos Obrigatório**. |
+
+
+
+
+## Rodando localmente
+
+Clone o repositório Execute a aplicação usando sua IDE ou ferramenta de build preferida Configurações Adicionais Certifique-se de ter o Java instalado Configure corretamente as dependências no arquivo de configuração
+
+### Para clonar o projeto
+
+```bash
+  git clone https://github.com/marianapaulinaprimo/user.git
+```
+
+## Melhorias
+
+Que melhorias você fez no seu código? Ex: refatorações, melhorias de performance, acessibilidade, etc. Sinta-se à vontade para contribuir.
+
+
+## Stack utilizada
+
+**Back-end:** 
+
+![Java](https://img.shields.io/badge/java-%23ec63a1.svg?style=for-the-badge&logo=openjdk&logoColor=black) 
+![Spring](https://img.shields.io/badge/spring-%23ec63a1.svg?style=for-the-badge&logo=spring&logoColor=black)
+![H2 DATABASE](https://img.shields.io/badge/H2DATABASE-ec63a1?style=for-the-badge&logo=h2database&logoColor=black)
+
+
+
+
+
