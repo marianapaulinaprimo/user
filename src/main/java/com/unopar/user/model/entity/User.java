@@ -1,4 +1,4 @@
-package com.unopar.user.entity;
+package com.unopar.user.model.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

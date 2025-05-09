@@ -1,6 +1,6 @@
-package com.unopar.user.services.exceptions;
+package com.unopar.user.model.exceptions;
 
-import com.unopar.user.domain.enumeration.UserErrorEnum;
+import com.unopar.user.model.enumeration.UserErrorEnum;
 import lombok.Getter;
 
 @Getter

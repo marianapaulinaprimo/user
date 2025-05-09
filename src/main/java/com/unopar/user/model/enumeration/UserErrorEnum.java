@@ -1,4 +1,4 @@
-package com.unopar.user.domain.enumeration;
+package com.unopar.user.model.enumeration;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

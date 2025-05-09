@@ -1,6 +1,6 @@
 package com.unopar.user.repository;
 
-import com.unopar.user.entity.User;
+import com.unopar.user.model.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

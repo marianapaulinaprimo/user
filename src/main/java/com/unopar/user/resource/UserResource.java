@@ -4,7 +4,7 @@ import com.unopar.user.domain.dto.DetailsUserRequest;
 import com.unopar.user.domain.dto.UserCreateRequest;
 import com.unopar.user.domain.dto.UserResponse;
 import com.unopar.user.domain.dto.UserUpdateRequest;
-import com.unopar.user.entity.User;
+import com.unopar.user.model.entity.User;
 import com.unopar.user.services.UserService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +40,7 @@ public class UserResource {
         User createdUser = new User();
         BeanUtils.copyProperties(createRequest,createdUser);
 
-        this.service.insert(createdUser);
+        service.insert(createdUser);
         UserResponse response = new UserResponse();
         BeanUtils.copyProperties(createdUser, response);
 
@@ -49,7 +49,7 @@ public class UserResource {
 
     @DeleteMapping("/{id}")
     public ResponseEntity deleteById(@PathVariable Long id)  {
-        this.service.delete(id);
+        service.delete(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 

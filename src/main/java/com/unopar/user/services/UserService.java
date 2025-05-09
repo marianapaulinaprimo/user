@@ -2,7 +2,7 @@ package com.unopar.user.services;
 
 import com.unopar.user.domain.dto.UserResponse;
 import com.unopar.user.domain.dto.UserUpdateRequest;
-import com.unopar.user.entity.User;
+import com.unopar.user.model.entity.User;
 
 import java.util.List;
 

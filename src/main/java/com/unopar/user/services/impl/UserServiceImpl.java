@@ -2,11 +2,11 @@ package com.unopar.user.services.impl;
 
 import com.unopar.user.domain.dto.UserResponse;
 import com.unopar.user.domain.dto.UserUpdateRequest;
-import com.unopar.user.domain.enumeration.UserErrorEnum;
-import com.unopar.user.entity.User;
+import com.unopar.user.model.enumeration.UserErrorEnum;
+import com.unopar.user.model.entity.User;
 import com.unopar.user.repository.UserRepository;
 import com.unopar.user.services.UserService;
-import com.unopar.user.services.exceptions.ResourceNotFoundException;
+import com.unopar.user.model.exceptions.ResourceNotFoundException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

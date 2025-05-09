@@ -1,4 +1,4 @@
-package com.unopar.user.services.exceptions;
+package com.unopar.user.model.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

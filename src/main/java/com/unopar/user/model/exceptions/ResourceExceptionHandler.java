@@ -1,6 +1,5 @@
-package com.unopar.user.services.exceptions;
+package com.unopar.user.model.exceptions;
 
-import com.unopar.user.domain.enumeration.UserErrorEnum;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

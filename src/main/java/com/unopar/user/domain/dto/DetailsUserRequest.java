@@ -1,6 +1,6 @@
 package com.unopar.user.domain.dto;
 
-import com.unopar.user.entity.User;
+import com.unopar.user.model.entity.User;
 
 public record DetailsUserRequest (Long id, String name, String email, String phone){
     public DetailsUserRequest(User user) {
